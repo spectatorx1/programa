@@ -12,8 +12,12 @@ class WelcomeController extends AbstractController
      */
     public function welcome()
     {
+        $userName = "Maciej M.";
+
+
         return $this->render('welcome/index.html.twig', [
             'controller_name' => 'WelcomeController',
+            'userName' => $userName,
         ]);
     }
 }
